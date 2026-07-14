@@ -179,13 +179,25 @@ The dashboard includes:
 ---
 
 ## 📸 Screenshots
+## 📸 Screenshots
 
-- Home Page
-- Emotion Prediction Results
-- AI Learning Guidance
-- Analytics Dashboard
+### Home Page
+![Home Page](screenshots/homepage.png)
 
----
+### Model Comparison
+![Model Comparison](screenshots/modelcomparison.png)
+
+### AI Learning Guidance
+![AI Learning Guidance](screenshots/ai-learning-guidance.png)
+
+### Emotion Distribution
+![Emotion Distribution](screenshots/emotion-distribution.png)
+
+### Session History
+![Session History](screenshots/session-history.png)
+
+### Emotion Representation
+![Emotion Representation](screenshots/representation.png)
 
 ## 📄 Output
 
