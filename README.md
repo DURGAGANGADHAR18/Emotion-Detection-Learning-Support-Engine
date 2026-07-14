@@ -111,7 +111,7 @@ Emotion_Detection_and_Learning_Support_Engine/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Emotion-Detection-and-Learning-Support-Engine.git
+git clone https://github.com/DURGAGANGADHAR18/Emotion-Detection-Learning-Support-Engine
 ```
 
 Navigate to the project
@@ -129,7 +129,7 @@ pip install -r requirements.txt
 Run the application
 
 ```bash
-streamlit run app.py
+python streamlit run app.py
 ```
 
 ---
@@ -240,7 +240,7 @@ The application provides:
 
 ## 👨‍💻 Developer
 
-**Gangadhar**
+**Bogadula Durga Gangadhar Rao**
 
 B.Tech – Computer Science and Engineering
 
