@@ -1,26 +1,29 @@
 # 🎓 Emotion Detection and Learning Support Engine
 
-An AI-powered web application that detects students' learning emotions from text and provides personalized learning support using **BERT**, **Multi-label BiLSTM**, and **Google Gemini AI**.
+An AI-powered web application that detects students' learning emotions from textual input and provides personalized learning support using **BERT**, **Multi-label BiLSTM**, **Rule-based Emotion Enhancement**, and **Google Gemini AI**.
 
 ---
 
 ## 📖 Project Overview
 
-The **Emotion Detection and Learning Support Engine** is designed to analyze students' learning-related text, identify their emotional state, and provide personalized learning guidance. The system combines Natural Language Processing (NLP), Deep Learning, and Generative AI to enhance students' learning experiences.
+The **Emotion Detection and Learning Support Engine** is an intelligent learning support platform designed to understand students' emotions while studying. By analyzing text entered by students, the system predicts one or multiple emotions and generates personalized AI-powered learning guidance to improve the overall learning experience.
+
+The project combines **Natural Language Processing (NLP)**, **Deep Learning**, and **Generative AI** to create an interactive educational assistant.
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- 🤖 BERT-based Emotion Detection
+- 🤖 BERT-based Emotion Classification
 - 🧠 Multi-label BiLSTM Emotion Detection
-- 💡 AI-Powered Learning Guidance using Google Gemini
-- 📊 Emotion Analytics Dashboard
+- 💡 Personalized Learning Guidance using Google Gemini AI
+- 📊 Interactive Emotion Analytics Dashboard
 - 📚 Subject-wise Emotion Analysis
+- 😊 Multi-emotion Detection
 - 📈 Emotion Confidence Scores
 - 📝 Prediction History Logging
-- 📥 Download AI Response
-- 🎨 Interactive Streamlit Interface
+- 📥 Download AI Responses
+- 🎨 User-friendly Streamlit Interface
 
 ---
 
@@ -34,7 +37,7 @@ The **Emotion Detection and Learning Support Engine** is designed to analyze stu
 
 ---
 
-## 🏗️ System Architecture
+# 🏗️ System Architecture
 
 ```
 Student Input
@@ -66,7 +69,7 @@ Analytics Dashboard
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 Emotion_Detection_and_Learning_Support_Engine/
@@ -74,24 +77,21 @@ Emotion_Detection_and_Learning_Support_Engine/
 │── app.py
 │── requirements.txt
 │── README.md
+│── .gitignore
 │
 ├── datasets/
 ├── docs/
 ├── history/
-├── models/
-│   ├── bert/
-│   ├── bert_v2/
-│   ├── bilstm/
-│   └── bilstm_multilabel/
-│
+├── screenshots/
 ├── training/
-│
 └── utils/
 ```
 
+> **Note:** Trained BERT and BiLSTM model files are not included due to GitHub file size limitations.
+
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - Streamlit
@@ -106,79 +106,135 @@ Emotion_Detection_and_Learning_Support_Engine/
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-Clone the repository
-
-```bash
-git clone https://github.com/DURGAGANGADHAR18/Emotion-Detection-Learning-Support-Engine
-```
-
-Navigate to the project
+### Clone the repository
 
 ```bash
-cd Emotion-Detection-and-Learning-Support-Engine
+git clone https://github.com/DURGAGANGADHAR18/Emotion-Detection-Learning-Support-Engine.git
 ```
 
-Install dependencies
+### Navigate to the project
+
+```bash
+cd Emotion-Detection-Learning-Support-Engine
+```
+
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### Run the application
 
 ```bash
-python streamlit run app.py
+streamlit run app.py
 ```
 
 ---
 
-## 🔑 Google Gemini API Setup
+# 🔑 Google Gemini API Setup
 
-Create a free API key from:
+1. Generate a free API key from Google AI Studio.
 
 https://aistudio.google.com/app/apikey
 
-Configure your API key in the application before running the project.
+2. Configure your API key before running the application.
+
+Example:
+
+```python
+genai.configure(api_key="YOUR_API_KEY")
+```
+
+> **Important:** Never upload your API key to GitHub.
 
 ---
 
-## 🤖 Models Used
+# 🤖 AI Models Used
 
-### BERT
+## BERT
 
 - Transformer-based emotion classification
 - Predicts primary and secondary emotions
 - Fine-tuned for educational emotion analysis
 
-### Multi-label BiLSTM
+---
 
-Architecture:
+## Multi-label BiLSTM
+
+Architecture
 
 - Embedding Layer
 - Bidirectional LSTM
-- Dropout Layers
+- Dropout Layer
 - Dense Layer
 - Sigmoid Output Layer
 
-Supports simultaneous detection of multiple emotions.
+Supports simultaneous detection of multiple emotions from a single student response.
 
 ---
 
-## 📊 Dashboard
+# 📊 Dashboard Features
 
-The dashboard includes:
+The analytics dashboard provides:
 
 - Emotion Distribution
-- Confidence Score Visualization
-- Prediction History
+- Emotion Confidence Scores
+- Session History
 - Student Emotion Trends
-- Analytics Charts
+- Interactive Charts
 
 ---
 
-## 📸 Screenshots
+# 🧪 Sample Inputs
+
+### Example 1
+
+**Input**
+
+```
+I enjoy programming and I am curious to learn more, but debugging my code is confusing and frustrating.
+```
+
+**Expected Emotions**
+
+- Frustrated
+- Curious
+- Confused
+
+---
+
+### Example 2
+
+**Input**
+
+```
+I understand Java concepts well and can solve programming problems confidently.
+```
+
+**Expected Emotion**
+
+- Confident
+
+---
+
+### Example 3
+
+**Input**
+
+```
+I feel bored while studying theory subjects.
+```
+
+**Expected Emotion**
+
+- Bored
+
+---
+
+# 📸 Screenshots
 
 ## 🏠 Home Page
 
@@ -186,7 +242,7 @@ The dashboard includes:
 
 ---
 
-## 🤖 Emotion Prediction Results (Model Comparison)
+## 🤖 Emotion Prediction
 
 ![Model Comparison](screenshots/modelcomparison.png)
 
@@ -213,7 +269,10 @@ The dashboard includes:
 ## 📉 Emotion Representation
 
 ![Emotion Representation](screenshots/representation.png)
-## 📄 Output
+
+---
+
+# 📄 Application Output
 
 The application provides:
 
@@ -221,24 +280,25 @@ The application provides:
 - Secondary Emotion
 - Multiple Emotion Detection
 - Emotion Confidence Scores
-- Personalized Learning Support
-- Prediction History
+- Personalized AI Learning Guidance
+- Session History
+- Analytics Dashboard
 
 ---
 
-## 🔮 Future Enhancements
+# 🔮 Future Enhancements
 
-- Voice Emotion Detection
-- Facial Emotion Recognition
-- Student Progress Tracking
-- Adaptive Learning Recommendations
-- Cloud Deployment
-- Mobile Application
-- Multi-language Support
+- 🎤 Voice Emotion Detection
+- 😀 Facial Emotion Recognition
+- 📈 Student Progress Tracking
+- 🎯 Adaptive Learning Recommendations
+- ☁️ Cloud Deployment
+- 📱 Mobile Application
+- 🌍 Multi-language Support
 
 ---
 
-## 👨‍💻 Developer
+# 👨‍💻 Developer
 
 **Bogadula Durga Gangadhar Rao**
 
@@ -246,14 +306,19 @@ B.Tech – Computer Science and Engineering
 
 Seshadri Rao Gudlavalleru Engineering College (SRGEC)
 
+GitHub:
+https://github.com/DURGAGANGADHAR18
+
 ---
 
-## 📜 License
+# 📜 License
 
 This project is developed for educational and academic purposes.
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you found this project useful, please give this repository a ⭐ on GitHub.
+If you found this project useful, please consider giving this repository a ⭐ on GitHub.
+
+Your support is greatly appreciated!
