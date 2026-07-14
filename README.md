@@ -179,26 +179,40 @@ The dashboard includes:
 ---
 
 ## 📸 Screenshots
-## 📸 Screenshots
 
-### Home Page
+## 🏠 Home Page
+
 ![Home Page](screenshots/homepage.png)
 
-### Model Comparison
+---
+
+## 🤖 Emotion Prediction Results (Model Comparison)
+
 ![Model Comparison](screenshots/modelcomparison.png)
 
-### AI Learning Guidance
+---
+
+## 💡 AI Learning Guidance
+
 ![AI Learning Guidance](screenshots/ai-learning-guidance.png)
 
-### Emotion Distribution
-![Emotion Distribution](screenshots/emotion-distribution.png)
+---
 
-### Session History
-![Session History](screenshots/session-history.png)
+## 📊 Emotion Distribution
 
-### Emotion Representation
+![Emotion Distribution](screenshots/Emotion%20Distribution.png)
+
+---
+
+## 📈 Session History
+
+![Session History](screenshots/Session%20History.png)
+
+---
+
+## 📉 Emotion Representation
+
 ![Emotion Representation](screenshots/representation.png)
-
 ## 📄 Output
 
 The application provides:
