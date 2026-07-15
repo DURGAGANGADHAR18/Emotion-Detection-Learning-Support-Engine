@@ -11,6 +11,10 @@ The **Emotion Detection and Learning Support Engine** is an intelligent learning
 The project combines **Natural Language Processing (NLP)**, **Deep Learning**, and **Generative AI** to create an interactive educational assistant.
 
 ---
+## 🎥 Project Demo Video
+
+[▶️ Watch the Project Demo Video]
+https://drive.google.com/file/d/1Aki-jEMVYpoVKfEw4MBXsESwsRAnBn_X/view?usp=sharing
 
 ## ✨ Key Features
 
